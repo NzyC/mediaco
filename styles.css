@@ -143,7 +143,6 @@
 }
 
 .landing_top {
-  width: 35%;
   height: auto;
   position: absolute;
   left: 7%;
@@ -153,14 +152,14 @@
 .landing_title {
   font-family: "Candal", sans-serif;
   color: white;
-  font-size: 80px;  
+  font-size: 74px;  
   opacity: 1;
   line-height: 12vh;
 }
 
 .blue_bg {
   height: 90px;
-  width: 100%;
+  width: 95%;
   background: #006dff;
   position: absolute;
   top: 50%;
@@ -209,7 +208,8 @@
 .landing_bottom {
   position: absolute;
   display: flex;
-  width: 45vw;
+  justify-content: center;
+  width: 50%;
   bottom: 5%;
   right: 0;
 }
