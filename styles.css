@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Lilita+One&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 93vw;
+  margin: 0 auto;
+}
+
+/* NAVBAR */
+
+#navbar {
+  height: 100px;
+  background: #221f1f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 6px solid white;
+}
+
+#navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo {
+  padding: 10px 60px;
+  background-color: #e3e3e3;
+  color: #004881;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 1000;
+}
+
+.nav_items {
+  list-style: none;
+  display: flex;
+  width: 33%;
+  justify-content: space-around;
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+.nav_item:hover {
+  cursor: pointer;
+  transition: all 300ms ease;
+  font-weight: 500;
+  transform: scale(1.03);
+  color: #e3e3e3;
+}
+
+.green_light {
+  height: 25px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60vw;
+}
+
+.availability {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 33%;
+  padding: 20px 20px;
+  border-right: solid 1px grey ;
+  border-left: solid 1px grey ;
+  transform: skew(-15deg);
+  font-size: 13px;
+}
+
+.availability_items {
+  transform: skew(15deg);
+}
+
+.contact {
+  display: flex;
+  margin: 0 20px;
+  width: 33%;
+}
+
+.contact_box {
+  background-color: red;
+  margin: 0 5px;
+  transform: skew(-15deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 10px;
+  width: 50%;
+  font-size: 15px;
+}
+
+.quote {
+  color: white;
+  font-weight: 600;
+  background-color: #00adff;
+  font-size: 13px;
+}
+
+.number {
+  color: white;
+  font-weight: 600;
+  background-color: #221f1f;
+  border: 3px solid white;
+  font-size: 13px;
+}
+
+/* LANDING */
+
+#landing {
+  height: 110vh;
+  position: relative;
+}
+
+.landing_bg_l {
+  z-index: -10;
+  position: absolute;
+  left: -10%;
+  height: 110vh;
+  filter: brightness(0.4);  
+}
+
+.landing_bg_r {
+  z-index: -10;
+  position: absolute;
+  right: 0;
+  height: 110vh;
+}
+
+.landing_top {
+  width: 35%;
+  height: auto;
+  position: absolute;
+  left: 7%;
+  top: 14%;
+}
+
+.landing_title {
+  font-family: "Candal", sans-serif;
+  color: white;
+  font-size: 80px;  
+  opacity: 1;
+  line-height: 12vh;
+}
+
+.blue_bg {
+  height: 90px;
+  width: 100%;
+  background: #006dff;
+  position: absolute;
+  top: 50%;
+  left: -2%;
+  transform: translateY(-40%);
+  z-index: -10;
+  opacity: 0.6;
+}
+
+.triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  width: 30px;
+  height: 89px;
+  background: linear-gradient(to bottom right, transparent 0%, transparent 50%, #006dff 50%, #006dff 100%);
+  transform: rotate(180deg) translate(-98%);
+
+  opacity: 0.95;
+}
+
+.landing_desc {
+  height: 20%;
+  position: absolute;
+  left: 7%;
+  top: 54%;
+}
+
+.desc_item {
+  display: flex;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.desc_right {
+  color: white;
+}
+
+.desc_img {
+  border-radius: 80%;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.landing_bottom {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 45vw;
+  bottom: 5%;
+  right: 5%;
+}
+
+.facebook {
+  height: 200px;
+  width: 180px;
+  background-color: #0b6cb8;
+  transform: skew(-12deg);
+}
+
+.google {
+  height: 200px;
+  width: 180px;
+  background-color: red;
+  transform: skew(-12deg);
+}
+
+.emergency {
+  height: 200px;
+  width: 180px;
+  background-color: #ffd100;
+  transform: skew(-12deg);
+  text-align: center;
+}
+
+.landing_bottom_title {
+  font-size: 68px;
+  transform: skew(12deg);
+}
+
+.landing_bottom_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.google, .facebook {
+  color: white;
+}
+
+.landing_bottom_card p {
+  font-size: 12px;
+  margin-bottom: 10px;
+  transform: skew(12deg);
+}
+
+.landing_bottom_card h4 {
+  transform: skew(12deg);
+}
+
+.star {
+  width: 60%;
+  transform: skew(12deg);
+}
