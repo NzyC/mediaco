@@ -209,10 +209,9 @@
 .landing_bottom {
   position: absolute;
   display: flex;
-  justify-content: space-around;
   width: 45vw;
   bottom: 5%;
-  right: 5%;
+  right: 0;
 }
 
 .facebook {
@@ -247,6 +246,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 20px;
 }
 
 .google, .facebook {
